@@ -25,7 +25,7 @@ export default function CreateCourseForm() {
     console.log("✅ Final Course Data:", data);
     setLoading(true); // Show loading overlay
 
-    const response = await fetch(`${API_URL}/gemini`, {
+    const response = await fetch("https://coursemakerbackend.onrender.com/gemini", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ data }),

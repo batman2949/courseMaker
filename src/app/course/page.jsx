@@ -56,7 +56,7 @@ export default function Courses() {
       for (let i = 0; i < geminiResponseArray.length; i++) {
         try {
           const response = await fetch(
-            `${API_URL}/gemini/geminiChapters`,
+            "https://coursemakerbackend.onrender.com/gemini/geminiChapters",
             {
               method: "POST",
               headers: { "Content-Type": "application/json" },
