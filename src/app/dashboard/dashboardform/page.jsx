@@ -25,7 +25,7 @@ export default function CreateCourseForm() {
     console.log("✅ Final Course Data:", data);
     setLoading(true); // Show loading overlay
 
-    const response = await fetch("http://localhost:5052/gemini", {
+    const response = await fetch(`${API_URL}/gemini`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ data }),

@@ -56,7 +56,7 @@ export default function Courses() {
       for (let i = 0; i < geminiResponseArray.length; i++) {
         try {
           const response = await fetch(
-            "http://localhost:5052/gemini/geminiChapters",
+            `${API_URL}/gemini/geminiChapters`,
             {
               method: "POST",
               headers: { "Content-Type": "application/json" },
