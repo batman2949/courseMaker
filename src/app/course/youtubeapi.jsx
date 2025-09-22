@@ -26,7 +26,7 @@ const YouTubeVideo = memo(({ query }) => {
       }
     }
     fetchVideo();
-  }, [query]);
+  }, []);
 
   if (loading) return <p>Loading video...</p>;
   if (!videoId) return <p>No video found for "{query}"</p>;
